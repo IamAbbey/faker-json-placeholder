@@ -58,7 +58,7 @@ const getSingleRandomJSON = (req, res, next) => {
 };
 
 const getWelcome = (req, res) => {
-  res.json({ msg: 'Welcome to dynamic json placeholder' });
+  res.json({ msg: 'Welcome to dynamic faker json placeholder' });
 };
 
 module.exports = { getRandomJSON, getWelcome, getSingleRandomJSON };

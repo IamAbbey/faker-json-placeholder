@@ -12,6 +12,10 @@ describe('integration testing', () => {
       const response = await request(app).get('/api/welcome');
       expect(response.statusCode).toBe(200);
     });
+    test('should return welcome object', async () => {
+      const response = await request(app).get('/');
+      expect(response.statusCode).toBe(200);
+    });
   });
   describe('testing 500 endpoint', () => {
     test('should return error msg', async () => {

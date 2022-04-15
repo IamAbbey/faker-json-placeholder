@@ -4,6 +4,7 @@ const notFound = require('./middleware/not-found');
 const errorHandlerMiddleware = require('./middleware/error-handler');
 const { createCustomError } = require('./errors/custom-error.js');
 const configureHeader = require('./middleware/configure-header');
+const { getWelcome } = require('./controllers/logics');
 const helmet = require('helmet');
 require('dotenv').config();
 const app = express();
@@ -36,6 +37,7 @@ app.use((req, res, next) => {
 });
 app.use(configureHeader);
 
+app.get('/', (req, res) => getWelcome(req, res));
 app.use('/api', router);
 if (RUNNING_LOCAL || app.get('env') === 'test') {
   app.use('/api/test', testRouter);

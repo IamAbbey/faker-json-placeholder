@@ -39,8 +39,8 @@
       "pre-commit": "npm run lint-test && npm run test-coverage"
     }
   },
-  "node": {
-    "version": "16.14.2"
+  "engines": {
+    "node": "16.14.2"
   },
   "private": true
 }
