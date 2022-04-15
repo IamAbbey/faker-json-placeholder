@@ -23,22 +23,36 @@ Think of this as JSONPlaceholder on steroids, providing extensive and configurab
 <td>
 
 - **keys** <br>
-  Specifies the keys you want in your JSON response.
-  e.g: name, age or [call a faker function using the double underscore (\_\_) format](#calling-a-faker-function) <br><br>
+  Specifies the keys you want in your JSON response (comma separated value).
+  e.g: name, age or [call a faker function using the double underscore (\_\_) format](#calling-a-faker-function) <br>
+  Some syntax sugar below is available for you:
+  
+  - name
+  - age
+  - address
+  - email
+  <br><br>
 - **limit** <br>
   Specifies the amount of data response you want <br><br>
 - **[schema](#predefined-schema)** <br>
 Specifies to use one of our predefined schema instead of specifying your own keys
 </td> 
-<td> Responds with a single faker JSON object with the keys specified in the query parameter or using a predefined schema</td>
+<td> Responds with a list of faker JSON object with the keys specified in the query parameter or using a predefined schema</td>
 </tr>
 <tr>
 <td> /api/faker/:id </td> 
 <td>
 
 - **keys** <br>
-  Specifies the keys you want in your JSON response.
-  e.g: name, age or [call a faker function using the double underscore (\_\_) format](#calling-a-faker-function) <br><br>
+  Specifies the keys you want in your JSON response (comma separated value).
+  e.g: name, age or [call a faker function using the double underscore (\_\_) format](#calling-a-faker-function) <br>
+  Some syntax sugar below is available for you:
+  
+  - name
+  - age
+  - address
+  - email
+  <br><br>
 - **[schema](#predefined-schema)** <br>
 Specifies to use one of our predefined schema instead of specifying your own keys
 </td> 
@@ -75,7 +89,8 @@ An in-depth overview of the different methods is available in the [fakerjs docum
 
 <br>
 Allowing this kind of query parameter opens up a wide range with which you can customize your response. <br>
-For more information about the different functions you can call check out the official
+
+For more information about the different functions you can check out the [official documentation](https://fakerjs.dev/guide/)
 
 <br><br>
 
