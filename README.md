@@ -18,7 +18,7 @@ Think of this as JSONPlaceholder on steroids, providing extensive and configurab
 <td> 
 /api/faker <br>
 
-[try it](http://127.0.0.1:3000/api/faker)
+[try it](https://faker-json-placeholder.herokuapp.com/api/faker?schema=todo)
 </td> 
 <td>
 
@@ -40,7 +40,11 @@ Specifies to use one of our predefined schema instead of specifying your own key
 <td> Responds with a list of faker JSON object with the keys specified in the query parameter or using a predefined schema</td>
 </tr>
 <tr>
-<td> /api/faker/:id </td> 
+<td> 
+/api/faker/:id 
+
+[try it](https://faker-json-placeholder.herokuapp.com/api/faker/1?schema=todo)
+</td> 
 <td>
 
 - **keys** <br>
