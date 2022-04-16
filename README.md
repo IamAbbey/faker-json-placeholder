@@ -4,6 +4,15 @@
 
 Faker JSON Placeholder is a simple fake REST API server for quick testing, prototyping and mocking.
 <br><br>
+## Why?
+When learning a new library, following a tutorial, or building prototypes, many individuals (including myself) are in need of some data.
+
+This simple-to-use Faker JSON API server comes to the rescue in such scenarios by providing you with extensive and configurable JSON fake responses. 
+
+You can find it running [here](https://faker-json.herokuapp.com) and are free to use it in your developments.
+
+I hope you will find it useful.
+<br><br>
 ## Is this different from the common JSONPlaceholder? ###
 
 Think of this as JSONPlaceholder on steroids, providing extensive and configurable JSON fake responses.
@@ -18,7 +27,7 @@ Think of this as JSONPlaceholder on steroids, providing extensive and configurab
 <td> 
 /api/faker <br>
 
-[try it](https://faker-json-placeholder.herokuapp.com/api/faker?schema=todo)
+[try it](https://faker-json.herokuapp.com/api/faker?schema=todo)
 </td> 
 <td>
 
@@ -43,7 +52,7 @@ Specifies to use one of our predefined schema instead of specifying your own key
 <td> 
 /api/faker/:id 
 
-[try it](https://faker-json-placeholder.herokuapp.com/api/faker/1?schema=todo)
+[try it](https://faker-json.herokuapp.com/api/faker/1?schema=todo)
 </td> 
 <td>
 
